@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  hutsle-mode
+//  hustle-mode
 //
 //  Created by Patrick Beal on 30/12/18.
 //  Copyright © 2018 Patrick Beal. All rights reserved.
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
         let url = URL(fileURLWithPath: path)
-        
+
         do{
             player = try AVAudioPlayer(contentsOf: url)
             player.prepareToPlay()
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             print(error.description)
         }
     }
-    
+
     
 
     @IBAction func powerBtnPressed(_ sender: Any) {
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         player.play()
         
         UIView.animate(withDuration: 2.3, animations: {
-            self.rocket.frame = CGRect(x: 0, y: 20, width: 375, height: 450)
+            self.rocket.frame = CGRect(x: 0, y: -100, width: 415, height: 670)
         }) { (finished) in
             self.hustleLbl.isHidden = false
             self.onLbl.isHidden = false
