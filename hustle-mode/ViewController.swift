@@ -11,18 +11,18 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var darkBlueBG: UIImageView!
     @IBOutlet weak var powerBtn: UIButton!
     @IBOutlet weak var cloudHolder: UIView!
     @IBOutlet weak var rocket: UIImageView!
     @IBOutlet weak var hustleLbl: UILabel!
     @IBOutlet weak var onLbl: UILabel!
+    @IBOutlet weak var darkBlueBG: UIImageView!
     
     var player: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let path = Bundle.main.path(forResource: "hutsle-on", ofType: "wav")!
+        let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
         let url = URL(fileURLWithPath: path)
         
         do{
@@ -39,6 +39,16 @@ class ViewController: UIViewController {
         cloudHolder.isHidden = false
         darkBlueBG.isHidden = true
         powerBtn.isHidden = true
+        
+        player.play()
+        
+        UIView.animate(withDuration: 2.3, animations: {
+            self.rocket.frame = CGRect(x: 0, y: 20, width: 375, height: 450)
+        }) { (finished) in
+            self.hustleLbl.isHidden = false
+            self.onLbl.isHidden = false
+            
+        }
     }
     
 }

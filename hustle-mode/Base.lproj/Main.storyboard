@@ -65,7 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="cloudHolder" destination="Uf6-Oc-tVI" id="qTs-AX-p58"/>
-                        <outlet property="darBlueBG" destination="c98-wd-R2h" id="bWI-5A-l0k"/>
+                        <outlet property="darkBlueBG" destination="c98-wd-R2h" id="xCN-vn-SjI"/>
                         <outlet property="hustleLbl" destination="akb-HL-pHF" id="9iC-Ps-x6D"/>
                         <outlet property="onLbl" destination="Gym-bX-Bhp" id="q1d-Hd-I17"/>
                         <outlet property="powerBtn" destination="wSS-cr-gQf" id="9dN-zE-dae"/>

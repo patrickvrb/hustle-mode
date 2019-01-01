@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:hutsle-mode.xcodeproj">
+      location = "self:/Users/patrickbeal/Desktop/hutsle-mode/hustle-mode.xcodeproj">
    </FileRef>
 </Workspace>
